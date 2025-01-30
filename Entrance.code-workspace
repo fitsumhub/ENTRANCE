@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../Educational-Website-master (1)/Educational-Website-master/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Entrance",
+		"liveServer.settings.port": 5501
+	}
+}

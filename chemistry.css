@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+    background: #224bcf;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.header .logo i {
+    color: #fa1d86;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.navbar ul li a {
+    padding: 2rem;
+    display: block;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.navbar ul li a:hover {
+    background: #fa1d86;
+}
+
+#menu-btn {
+    cursor: pointer;
+    color: #fff;
+    font-size: 2.5rem;
+    display: none;
+}
+
+main {
+    padding: 3rem 9%;
+}
+
+.course {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.course-header h1 {
+    font-size: 3rem;
+    color: #302851;
+}
+
+.course-header p {
+    font-size: 1.6rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+.note h3 {
+    font-size: 2.5rem;
+    color: #302851;
+    margin-bottom: 1rem;
+}
+
+.note h4 {
+    font-size: 2rem;
+    color: #fa1d86;
+    margin-top: 1.5rem;
+}
+
+.note p {
+    font-size: 1.6rem;
+    color: #666;
+    margin: 1rem 0;
+}
+
+.note ul {
+    margin-left: 2rem;
+    list-style-type: disc;
+}
+
+.note ul li {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.footer {
+    background: #224bcf;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer p {
+    font-size: 1.4rem;
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+    main {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+    .header {
+        padding: 2rem;
+    }
+    .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: #224bcf;
+        display: none;
+    }
+    .navbar.active {
+        display: block;
+    }
+    .navbar ul li {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
